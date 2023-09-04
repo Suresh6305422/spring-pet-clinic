@@ -1,0 +1,13 @@
+version: 3.8
+services:
+  spc:
+    build: .
+    dockerfile: dockerfile
+    ports:
+      - 808:8080
+    networks:
+      - spc-net
+
+
+networks:
+  spc-net        
